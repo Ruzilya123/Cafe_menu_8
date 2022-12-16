@@ -15,5 +15,5 @@ class BludoSerializer(serializers.ModelSerializer):
 class ZakazSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Zakaz
-        fields = [*'fio, date, peoples, agreement, zal, bludo'.split(', ')]
+        fields = ['fio', 'date', 'noon', 'peoples', 'agreement', 'zal', 'bludo']
 
